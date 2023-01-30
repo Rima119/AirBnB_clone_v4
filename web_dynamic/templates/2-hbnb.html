@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../static/styles/6-filters.css">
     <link type="text/css" rel="stylesheet" href="../static/styles/8-places.css?{{ cache_id }}">
     <link rel="icon" href="../static/images/icon.png?{{ cache_id }}"/>
+<<<<<<< HEAD
     <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
     <SCRIPT src="{{ url_for('static', filename='scripts/2-hbnb.js') + '?' + cache_id }}"></SCRIPT>
     <title>HBnB</title>
@@ -16,6 +17,15 @@
     <header>
       <div id="api_status" class="available">
       </div>
+=======
+    <title>HBnB</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="../static/scripts/1-hbnb.js?{{ cache_id }}"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo"></div>
+>>>>>>> 6694c27cd0939e65179c5762c979375626bff3ab
     </header>
     <div class="container">
       <section class="filters">
@@ -43,10 +53,14 @@
 	  <div class="popover">
 	    <ul>
 	      {% for amenity in amenities %}
+<<<<<<< HEAD
 	      <li>
 		<input type="checkbox" data-id="{{ amenity.id }}" data-name="{{ amenity.name }}">
 		{{ amenity.name }}
 	      </li>
+=======
+	      <li> <INPUT type="checkbox" style="margin-right:10px;" data-id=":amenity_id" data-name=":amenity_name"> {{ amenity.name }}</li>
+>>>>>>> 6694c27cd0939e65179c5762c979375626bff3ab
 	      {% endfor %}
 	    </ul>
 	  </div>
